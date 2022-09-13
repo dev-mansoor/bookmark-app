@@ -1,0 +1,157 @@
+:root{
+    --shadow-:1px 1px 5px 0.1px  rgb(172, 172, 172);
+    --bgColor-:#007bff;
+    --fz-14:14px;
+    --br-6-:6px;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+    width: max-content;
+}
+
+a,a:hover
+{
+    text-decoration: none;
+
+}
+
+
+
+body{
+    background-color: rgba(240, 240, 240, 0.781);
+    font-size: var(--fz-14);
+}
+
+.col-12
+{
+    padding: 0;
+}
+
+.p-r-l
+{
+    padding: 0 15px;
+}
+
+.divider
+{
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.container
+{
+    margin-top: 25px;
+}
+
+.container div.input
+{
+    padding: 10px 15px;
+    background-color:rgb(255, 255, 255);
+    box-shadow:var(--shadow-);
+    border-radius: var(--br-6-);
+    display: none;
+}
+
+.container .bookmark-title .button
+{
+    background-color:rgb(255, 255, 255);
+}
+.container .bookmark-title .button .material-icons
+{
+    font-size: 18px;
+}
+
+
+
+
+.container .input #myform
+{
+    padding: 10px 0;
+}
+.container .input #myform input[type="text"]
+{
+    font-size: var(--fz-14);
+}
+
+.container .input #myform button
+{
+    width: fit-content;
+}
+
+.container .input #myform button#save_btn 
+{
+    width: 100px;
+}
+
+
+
+.container #output 
+{
+    height: auto;
+}
+
+
+.container #output .display-bookmark
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #ffff;
+    margin-top: 6px;
+    transform: scale(1);
+    transition: transform 0.15s;
+}
+
+.container #output .display-bookmark:hover
+{
+    transform: scale(1.01);
+}
+
+.display-bookmark .url-bookmark
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items:center; 
+}
+
+.display-bookmark .url-bookmark .url-icon img
+{
+    width: 20px;
+    margin-right: 15px;
+}
+
+
+.display-bookmark .url-bookmark .url-name
+{
+    color:#000000;
+}
+
+.display-bookmark .url-bookmark-delete
+{
+    font-size: 20px;
+    padding: 5px;
+    
+    border-radius: 50%;
+
+}
+
+.display-bookmark .url-bookmark-delete:hover
+{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.display-bookmark .url-bookmark-delete:active
+{
+    background-color: #e0e0e0;
+ 
+}
+
+.container div.alert
+{
+    transition: all 0.30s ease-in-out;
+}
